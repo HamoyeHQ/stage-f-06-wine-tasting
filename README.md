@@ -1,5 +1,8 @@
 # Wine Reviews
+*Create a predictive model to identify wines through blind tasting like a master sommelier*
+
 **Inspiration**
+
 This dataset offers some great opportunities for sentiment analysis and other text related predictive models. The goal is to create a model that can identify the variety, winery, and location of a wine based on a description. 
 
 **Content**
