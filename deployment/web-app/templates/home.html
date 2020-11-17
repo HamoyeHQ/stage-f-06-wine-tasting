@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<title>Wine Tasting</title>
+<link href="{{url_for("static", filename="style.css")}}" rel="stylesheet"/>
+<body>
+<h1 id="heading">Wine Tasting Group's Project</h1>
+<div id="all">
+<strong>
+<div>
+<p>This is an open source project by Wine Tasting project group in Hamoye's data science internship aimed at solving one of the world's most difficult exam -- <i>the master sommelier exam</i></p>
+<p>Enter your wine's description in the textbox below and we will tell you the wine's variety. </p>
+<p>We predict any of the 20 wine varieties listed below<nav><ul><a href="{{url_for("varieties")}}">wine varieties</a></ul></nav></p>
+<p>Your description can consist of one or more sentences. To improve performance, you can optionally enter the wine's country, designation, province, region1, region2, and winery seperated by white spaces as though they are words of a single sentence. This single sentence should be the last sentence of your description.</p>
+For example, if my wine's decription is <i>"This wine tastes good like an orange juice in the cool of the day. It is refreshing and its pale colour is appealing. United States of America Diasy Oregon Willamette Valley Willamette Valley Antiquum Farm"</i></p>
+In the above description, United States of America Diasy Oregon Willamette Valley Willamette Valley Antiquum Farm are respectively the wine's country, designation, province, region1, region2, and winery.<br/>
+<h1>Describe your wine</h1></div>
+<form method="post" action="predict">
+<textarea id="description" name="inp" rows="5" cols="80" required></textarea><br/><br/>
+<input id="submit" type="submit" value="Get Wine Variety"/>
+</form><br/>
+<div>See more wine description samples given by Wine Ethusiast's professional sommeliers <a href="https://www.winemag.com/?s=&drink_type=wine">here</a></div>
+</strong>
+</div>
+</body>
+</html>
